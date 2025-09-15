@@ -1,0 +1,32 @@
+.table thead th { white-space: nowrap; }
+.badge-soft { background:#eef3ff; color:#2740ff; }
+.card { border: 0; }
+.card .card-title { font-weight: 600; }
+@media print {
+  .d-print-none { display:none !important; }
+  nav, .filter-card, .new-card { display:none !important; }
+  body { background:#fff; }
+  .table { font-size: 12px; }
+}
+
+/* Móvil: cards cómodas al tacto */
+.cheque-card { border-left-width: 6px; }
+.cheque-card .label { font-size: .75rem; color:#6c757d; }
+.cheque-card .value { font-weight:600; }
+.cheque-actions .btn { width: 100%; }
+
+/* Ajustes tabla en desktop */
+@media (min-width: 768px){
+  .mobile-only { display:none !important; }
+}
+@media (max-width: 767.98px){
+  .desktop-only { display:none !important; }
+}
+
+.cheque-card { border-left-width: 6px; }
+.cheque-card .label { font-size: .75rem; color:#6c757d; }
+.cheque-card .value { font-weight:600; }
+.cheque-actions .btn { width: 100%; }
+@media (min-width: 768px){ .mobile-only { display:none!important; } }
+@media (max-width: 767.98px){ .desktop-only { display:none!important; } }
+

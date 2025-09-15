@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; }
+table { border-collapse: collapse; }
+th, td { padding: 7px 12px; border: 1px solid #bbb; }
+h2 { margin-bottom: 12px; }
+a { color: #1458c8; text-decoration: none; }
+a:hover { text-decoration: underline; }

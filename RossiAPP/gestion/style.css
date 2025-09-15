@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+h2 {
+    color: #313e54;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+a {
+    color: #285c93;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #18304a;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgba(80,80,80,0.09);
+    overflow: hidden;
+}
+th, td {
+    border: 1px solid #e3e3e3;
+    padding: 10px 14px;
+    text-align: left;
+}
+th {
+    background: #e9f3fb;
+    color: #17446e;
+    font-weight: bold;
+}
+
+tr:nth-child(even) { background: #f9fafb; }
+tr:hover { background: #e7f1fc; }
+
+input[type="text"], input[type="date"], input[type="number"], input[type="file"] {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 230px;
+    margin: 3px 0 10px 0;
+    font-size: 16px;
+}
+input[type="submit"], button, .btn {
+    background: #285c93;
+    color: #fff;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 8px 0;
+    transition: background 0.2s;
+}
+input[type="submit"]:hover, button:hover, .btn:hover {
+    background: #1b4067;
+}
+.success { color: #27ae60; font-weight: bold; }
+.error { color: #d00000; font-weight: bold; }
+.label-archivo {
+    color: #666;
+    font-size: 13px;
+    margin-left: 8px;
+}
+#top-bar {
+    background: #17446e;
+    padding: 18px 30px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(30,60,110,0.11);
+    letter-spacing: 1px;
+}
+
+/* ---- Fix inputs & tablas en móviles ---- */
+.form-control, .form-select { max-width: 100%; height: auto; line-height: 1.5; }
+.input-group > .form-control { flex: 1 1 auto; width: 1%; min-width: 0; }
+.table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* Quitar iconos/pseudo-elementos viejos en inputs (causan esa "C") */
+input[type="date"]::before,
+input[type="date"]::after,
+.form-control::before,
+.form-control::after { content: none !important; background: none !important; }
+
+/* En pantallas chicas, que todo el form sea 1 por fila */
+@media (max-width: 768px) {
+  .row.g-3 > [class*="col-"],
+  .row.g-2 > [class*="col-"] { flex: 0 0 100%; max-width: 100%; }
+}
